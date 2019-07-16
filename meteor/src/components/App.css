@@ -1,0 +1,57 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  height: 100px;
+  background-color: #D5DDDE;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 15px -5px #888;
+    box-shadow: 0 5px 15px -5px #888;  
+}
+
+.card-content {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 20px;
+}
+
+.divider-red {
+  width: 700px;
+  height: 1px;
+  background-color: #D92119;
+  margin: 50px 0;
+}
+
+.divider-grey {
+  width: 400px;
+  height: 1px;
+  background-color: #D5DDDE;
+  margin: 30px 0;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  color: #FFA601;
+  height: 40px;
+  width: 700px;
+  background-color: #496468;
+  padding: 10px;
+}
+
+.hours-and-button {
+  display: flex;
+}
+
