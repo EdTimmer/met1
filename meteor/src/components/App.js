@@ -1,29 +1,38 @@
-import React from 'react';
-import './App.css';
-import '../entries.js';
+import React from "react";
+import "./App.css";
+import entries from "../entries.js";
 
-import Header from './Header';
-import Entry from './Entry';
+import Header from "./Header";
+import Entry from "./Entry";
 
 class App extends React.Component {
   state = {
-    name: "",
+    summary: "",
     hours: 0,
     description: ""
-  }
+  };
   render() {
     return (
       <div className="App">
         <Header />
-        <div className="divider-red"></div>
+        <div className="divider-red" />
         <div>
-          <Entry name="testname" hours={8} description="big project" />
+          {entries.map(entry => {
+            return (
+              <div key={entry.id}>
+                <Entry
+                  summary={entry.summary}
+                  hours={entry.hours}
+                  description={entry.description}
+                />
+                <div className="divider-grey" />
+              </div>
+            );
+          })}
         </div>
-        <div className="divider-grey"></div>
       </div>
     );
   }
-  
 }
 
 export default App;

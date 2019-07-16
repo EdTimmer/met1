@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #F3F8F8;
 }
 
 .card {
   display: flex;
   justify-content: space-between;
   width: 700px;
-  height: 100px;
+  height: auto;
   background-color: #D5DDDE;
   padding: 10px;
   -webkit-box-shadow: 0 5px 15px -5px #888;
@@ -33,7 +34,7 @@
   width: 400px;
   height: 1px;
   background-color: #D5DDDE;
-  margin: 30px 0;
+  margin: 40px auto 40px auto;
 }
 
 .entry {
@@ -49,9 +50,44 @@
   width: 700px;
   background-color: #496468;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .hours-and-button {
+  display: flex;  
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top-text-project {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: bold;
+}
+
+.hours {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-style: italic;
+}
+.btn {
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.description {
   display: flex;
 }
 
+.description-left {
+  width: 110px;
+  text-align: right;
+  padding: 10px;
+  font-size: 16px;
+}
+.description-right {
+  width: 550px;
+  padding: 10px;
+}
