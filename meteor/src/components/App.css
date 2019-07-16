@@ -57,12 +57,14 @@
   display: flex;  
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 20px;
 }
 
 .top-text-project {
   margin-top: auto;
   margin-bottom: auto;
   font-weight: bold;
+  margin-left: 20px;
 }
 
 .hours {
@@ -79,7 +81,18 @@
 
 .description {
   display: flex;
+  /* overflow-y: hidden; */
+  /* max-height: 500px;  */
+  /* approximate max height */
+/* max-height: 100px;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1); */
 }
+
+/* .description-closed {
+	max-height: 0;
+} */
 
 .description-left {
   width: 110px;

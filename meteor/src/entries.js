@@ -68,6 +68,12 @@ const entries = [
     hours: 0.75,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus, nunc ac semper congue, erat enim placerat tortor, nec suscipit tortor est feugiat erat. Donec cursus bibendum nisi, sed tempor turpis ullamcorper ut. Sed nec faucibus ex. Ut commodo, odio eu vulputate euismod, lacus neque interdum nisi, quis tristique ex sapien in magna. Phasellus ornare feugiat justo, nec hendrerit ex facilisis non."
+  },
+  {
+    id: "11",
+    summary: "SPACE FORCE",
+    hours: 110.75,
+    description: "Per aspera ad astra"
   }
 ];
 
