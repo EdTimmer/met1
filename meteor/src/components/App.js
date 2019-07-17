@@ -16,8 +16,8 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <div className="divider-red" />
-        <div>
-          {entries.map(entry => {
+        <div className="all-entries">
+          {entries.map((entry, index) => {
             return (
               <div key={entry.id}>
                 <Entry
@@ -25,7 +25,9 @@ class App extends React.Component {
                   hours={entry.hours}
                   description={entry.description}
                 />
-                <div className="divider-grey" />
+                {index !== entries.length - 1 && (
+                  <div className="divider-grey" />
+                )}
               </div>
             );
           })}

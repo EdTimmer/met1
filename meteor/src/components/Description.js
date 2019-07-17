@@ -1,16 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Description({ description }) {
-  // const closedClass = closed ? 'description-closed' : ''; 
+  // const closedClass = closed ? 'description-closed' : '';
   return (
     <div className="description">
-      <div className="description-left">
-        Description
-      </div>
-      <div className="description-right">
-        {description}
-      </div>
-
+      <div className="description-left">Description</div>
+      <div className="description-right">{description}</div>
     </div>
   );
 }

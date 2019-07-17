@@ -6,87 +6,82 @@
   background-color: #F3F8F8;
   font-family: 'Roboto', sans-serif;
 }
-
 .card {
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  width: 800px;
   height: auto;
   background-color: #D5DDDE;
   padding: 10px;
   color: #323E40;
-  -webkit-box-shadow: 0 16px 16px -12px #888;
-	   -moz-box-shadow: 0 16px 16px -12px #888;
-	        box-shadow: 0 16px 16px -12px #888;
+  -webkit-box-shadow: 0 10px 10px -8px rgb(186, 186, 186);
+	  -moz-box-shadow: 0 10px 10px -8px rgb(186, 186, 186);
+	    box-shadow: 0 10px 10px -8px rgb(186, 186, 186);
 }
 .card-content-title {
   margin-top: auto;
   margin-bottom: auto;
   padding: 40px 20px;;
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bold;
   letter-spacing: 1px;
 }
-
 .card-content-date {
   margin-top: auto;
   margin-bottom: auto;
   padding: 0 20px;
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 26px;
 }
-
 .divider-red {
-  width: 700px;
+  width: 800px;
   height: 1px;
   background-color: #D92119;
   margin: 50px 0;
 }
-
 .divider-grey {
   width: 400px;
   height: 1px;
   background-color: #D5DDDE;
   margin: 40px auto 40px auto;
 }
-
+.all-entries {
+  max-height: 700px;
+  overflow: scroll;
+}
 .entry {
   display: flex;
   flex-direction: column;
 }
-
 .top {
   display: flex;
   justify-content: space-between;
   color: #FFA601;
   height: 40px;
-  width: 700px;
+  width: 800px;
   background-color: #496468;
   padding: 10px;
   text-transform: uppercase;
 }
-
 .top-shadow {
   display: flex;
   justify-content: space-between;
   color: #FFA601;
   height: 40px;
-  width: 700px;
+  width: 800px;
   background-color: #496468;
   padding: 10px;
   text-transform: uppercase;
-  -webkit-box-shadow: 0 16px 16px -12px #888;
-    -moz-box-shadow: 0 16px 16px -12px #888;
-        box-shadow: 0 16px 16px -12px #888;
+  -webkit-box-shadow: 0 10px 10px -8px rgb(186, 186, 186);
+    -moz-box-shadow: 0 10px 10px -8px rgb(186, 186, 186);
+      box-shadow: 0 10px 10px -8px rgb(186, 186, 186);
 }
-
 .hours-and-button {
   display: flex;  
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 20px;
 }
-
 .top-text-project {
   margin-top: auto;
   margin-bottom: auto;
@@ -94,7 +89,6 @@
   margin-left: 20px;
   font-size: 20px;
 }
-
 .hours {
   margin-top: auto;
   margin-bottom: auto;
@@ -107,9 +101,9 @@
   margin-left: 10px;
   font-weight: bold;
 }
-
 .description {
   display: flex;  
+  width: 800px;
 }
 .description-left {
   width: 100px;
@@ -119,7 +113,7 @@
   color: #496468;
 }
 .description-right {
-  width: 550px;
+  width: auto;
   padding: 10px;
   color: #495556;
   font-size: 18px;
