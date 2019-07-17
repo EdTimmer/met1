@@ -14,9 +14,10 @@ class Entry extends React.Component {
     const { summary, hours, description } = this.props;
     const { showDescription } = this.state;
     const { toggleShow } = this; 
+    const topClass = showDescription ? "top" : "top-shadow";
     return (
       <div className="entry">
-        <div className="top">
+        <div className={topClass}>
           <div className="top-text-project">
             PROJECT {summary}
           </div>
@@ -28,11 +29,11 @@ class Entry extends React.Component {
         </div>
         </div>
           {
-            showDescription ? (
+            showDescription && (
             <div className="card">
               <Description description={description} />
             </div>
-            ) : null
+            )
           }
 
       </div>

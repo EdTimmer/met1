@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   background-color: #F3F8F8;
+  font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -13,14 +14,26 @@
   height: auto;
   background-color: #D5DDDE;
   padding: 10px;
-  -webkit-box-shadow: 0 5px 15px -5px #888;
-    box-shadow: 0 5px 15px -5px #888;  
+  color: #323E40;
+  -webkit-box-shadow: 0 16px 16px -12px #888;
+	   -moz-box-shadow: 0 16px 16px -12px #888;
+	        box-shadow: 0 16px 16px -12px #888;
+}
+.card-content-title {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 40px 20px;;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.card-content {
+.card-content-date {
   margin-top: auto;
   margin-bottom: auto;
   padding: 0 20px;
+  letter-spacing: 3px;
+  font-size: 20px;
 }
 
 .divider-red {
@@ -53,6 +66,20 @@
   text-transform: uppercase;
 }
 
+.top-shadow {
+  display: flex;
+  justify-content: space-between;
+  color: #FFA601;
+  height: 40px;
+  width: 700px;
+  background-color: #496468;
+  padding: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 16px 16px -12px #888;
+    -moz-box-shadow: 0 16px 16px -12px #888;
+        box-shadow: 0 16px 16px -12px #888;
+}
+
 .hours-and-button {
   display: flex;  
   margin-top: auto;
@@ -65,42 +92,35 @@
   margin-bottom: auto;
   font-weight: bold;
   margin-left: 20px;
+  font-size: 20px;
 }
 
 .hours {
   margin-top: auto;
   margin-bottom: auto;
   font-style: italic;
+  font-size: 20px;
 }
 .btn {
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   margin-left: 10px;
   font-weight: bold;
 }
 
 .description {
-  display: flex;
-  /* overflow-y: hidden; */
-  /* max-height: 500px;  */
-  /* approximate max height */
-/* max-height: 100px;
-	transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1); */
+  display: flex;  
 }
-
-/* .description-closed {
-	max-height: 0;
-} */
-
 .description-left {
-  width: 110px;
+  width: 100px;
   text-align: right;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
+  color: #496468;
 }
 .description-right {
   width: 550px;
   padding: 10px;
+  color: #495556;
+  font-size: 18px;
 }
